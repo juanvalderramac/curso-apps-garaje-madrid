@@ -6,16 +6,20 @@ id {
 
 body {
 	text-align: center;
-	font-family: "Roboto";
+	font-family: "Open Sans";
+	background-position: top;
+	    background-image: url(http://www.lol-wallpapers.com/wp-content/uploads/2017/06/Classic-Kayn-Splash-Art-HD-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-2.jpg);
+
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 32px;
+	color: white;
 }
 
 h2 {
-	font-size: 18px;
-	color: #949494;
+	font-size: 24px;
+	color: black;
 	margin-bottom: 209px;
 }
 
@@ -27,12 +31,12 @@ h2 {
 }
 
 .green-button {
-	width: 144px;
-	height: 36px;
+	width: 127px;
+	height: 90px;
 	background-color: #009688;
 	border-radius: 2px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 28px;
 	color: white;
 	border: none;
 	font-family: "Roboto";
