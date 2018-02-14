@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro - Curso Apps Garaje</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="center-screen">
+		<h1 class="title-page">Registro</h1>
+		<div class="input-container">
+			<img src="img/face.svg" alt="Face user">
+			<input id="input-usuario" type="text" placeholder="Usuario">
+		</div>
+		<div class="input-container">
+			<img src="img/email.svg" alt="Face user">
+			<input id="input-correo" type="email" placeholder="Correo">
+		</div>
+		<div class="input-container">
+			<img src="img/lock.svg" alt="Face user">
+			<input id="input-contraseña" type="password" placeholder="Contraseña">
+		</div>
+		<p class="error">Mensaje de error</p>
+		<button id="boton-registro" class="green-button margin-top">Registrar</button>
+	</div>
+
+	<script>
+		var cadena = "Hola mundo";
+		console.log(cadena);
+
+		$("#boton-registro").click(function() {
+			//alert(cadena);
+			var usuario = $("#input-usuario").val();
+			var correo = $("#input-correo").val();
+			var contraseña = $("#input-contraseña").val();
+
+			console.log("Usuario: " + usuario);
+			console.log("Correo: " + correo);
+			console.log("Contraseña: " + contraseña);
+
+			if(usuario.length > 4) {
+				mostrarError("Nombre de usuario demasiado largo");
+			}
+			else if(usuario == "" || correo == "" || contraseña == "") {
+				mostrarError("Hay algún campo vacío");
+			}
+		});
+
+		function mostrarError(mensaje) {
+			$(".error").text(mensaje);
+			$(".error").show();
+		}
+	</script>
+</body>
+</html>

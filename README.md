@@ -1,1 +1,2 @@
-# curso-apps-garaje-madrid
+# curso-apps-garaje
+App sencilla con login
